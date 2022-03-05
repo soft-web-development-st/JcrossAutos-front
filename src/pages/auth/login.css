@@ -1,0 +1,137 @@
+
+.login-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 91vh;
+    width: 100%;
+    overflow: hidden;  
+    background: rgba(190, 11, 11, 0.4);
+    
+} 
+.login-card h1{
+    color: white;
+    margin-top: -90px;
+}
+.login_i{
+    color: rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+.loading{
+    font-size: 50px;
+}
+
+.login-card-contents {
+    box-shadow: 0  22px 40px rgba(83, 14, 14, 0.5);
+    background: rgba(73, 15, 15, 0.7);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-family: var(--raleway-font-family);
+    width: 50%;
+}
+
+.login-card-contents h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+
+
+
+.login-form input,
+.login-form button {
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+    padding: .8em .9em;
+    font-family: var(--roboto-font-family);
+    border: none;
+    border-radius: 5px;
+  
+}
+
+
+.login_image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+.login_forgot{
+    color: white;
+  float: right;
+    font-size: 15px;
+}
+.login_forgot:hover{
+    color: red;
+    
+}
+.login_btn{
+    background: green;
+    color: white;
+}
+.login_btn:hover{
+    background: rgb(233, 233, 233);
+    color: green;
+}
+.google_btn{
+    width: 100%;
+    background: red;
+}
+.google_btn:hover{
+    background: rgb(228, 226, 226);
+    color: red;
+}
+.main_form{
+    position: relative;
+}
+.login_icon{
+    position: absolute;
+     top: 8%;
+     right: 5%;
+     color: #333;
+     font-size: 16px;
+
+}
+.go {
+top: 35%;
+color: #333;
+
+}
+.dont_have_account{
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 700px) {
+    .main_form{
+        width: 90vw;
+        margin-left: -5%;
+        
+    }
+    .login-card{
+        width: 100vw;
+   
+    }
+    .login-card-contents{
+        width: 100%;
+    }
+}

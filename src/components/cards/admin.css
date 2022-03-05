@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Mukta:wght@200&family=Poppins:wght@300;400&display=swap");
+.admin_card {
+  background: rgb(255, 255, 255);
+  /* box-shadow: 5px 5px 5px rgb(196, 196, 196); */
+  width: 100%;
+  height: 45vh;
+
+  margin: 1.5rem 0;
+  border-radius: 15px;
+}  
+.admin_card_info {
+  background: rgb(255, 255, 255);
+  box-shadow: 8px 8px 5px rgb(245, 244, 244);
+  position: relative;
+  margin: 1rem 1rem;
+  height: 100%;
+  width: 300px;
+  border-radius: 5px;
+} 
+.admin_card_img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+    border-radius: 5px;
+}
+.admin_card_title {
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 0.5rem;
+  color: rgb(8, 153, 39);
+}
+.admin_card_price {
+  font-size: 20px;
+  color: rgb(141, 12, 12);
+  padding: 0 0.5rem;
+}
+.admin_card_description {
+  padding: 0 0.2rem;
+  color: rgb(124, 123, 123);
+  text-align: justify;
+  font-family: "Poppins";
+  font-size: 15px;
+}
+@media screen and (min-width: 810px) {
+ 
+  .admin_display {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
+.admin_h4 {
+  font-size: 25px;
+  color: rgb(110, 110, 110);
+  position: absolute;
+  left: 50%;
+  top: 0%;
+}
+.admin_loading {
+  font-size: 25px;
+  color: rgb(201, 12, 12);
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.admin_actions{
+    padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+   /* border-top: 1px solid rgb(33, 129, 9); */
+   margin-top: 10px;
+   position: relative;
+    
+}
+.admin_edit{
+    background: transparent;
+    color: rgb(8, 153, 39);
+     transition: all .5s ease;
+}
+.admin_delete{
+   
+    transition: all .5s ease;
+        color: red;
+    background: transparent;
+}
+.admin_delete:hover{
+ background: red;
+    color: white;
+}
+.admin_edit:hover{
+ background: green;
+    color: white;
+}
+.left{
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    margin-top: -20px;
+   
+}
+.admin_underline{
+    position: absolute;
+    height: 0.1rem;
+    width: 13%;
+    background: rgb(180, 180, 180);
+    top: 20%;
+    transform: rotate(90deg);
+}
+
+.admin_container{
+ display: flex;
+ margin-top: 30px;
+ position: relative;
+}

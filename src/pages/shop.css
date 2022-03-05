@@ -1,0 +1,29 @@
+
+@media  screen and (max-width: 700px) {
+
+.shop_container{
+    margin-top: -80px;
+}
+/* .shop_product{
+    text-align: center;
+    background-color: rgb(216, 17, 17);
+    color: white;
+    padding: .5rem;
+    margin-top: 15px;
+} */
+.shop_filter{
+    margin-top: 35px;
+}
+}  
+@media  screen and (min-width: 1200px) {
+.shop_grid{
+     display: grid;
+    grid-template-columns: 1fr 1fr; 
+   
+
+}
+.shop_display_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}

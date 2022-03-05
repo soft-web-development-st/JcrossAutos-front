@@ -1,0 +1,40 @@
+.complete_btn{
+background: rgb(197, 7, 7);
+width: 100%;
+color: #fff;
+margin-top: .5rem;
+}
+.complete_btn:hover{
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+}
+.completeregistration{
+   background: rgba(0,0,0,0.5);
+   height: 100vh;
+}
+.complete_image{
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.completeRegistration_form{
+    transform: translate(50%,50%);
+    background: rgb(75, 1, 1);
+   padding: 2rem;
+}
+.login-card-contents{
+margin: 0 auto;
+}
+.registrationComplete_info{
+    width: 50%;
+}
+.registerComplete__title{
+    transform: translate(50%,70%);
+    font-size: 30px;
+    color: white;
+    padding-top: 3rem;
+    text-align: center;
+}

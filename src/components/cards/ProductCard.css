@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Mukta:wght@200&family=Poppins:wght@300;400&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.home_card_img{ 
+  height: 25vh;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.home_card{
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.home_card_info{
+   background: rgb(255, 255, 255);
+  box-shadow: 8px 8px 5px rgb(245, 244, 244);
+  position: relative;
+  margin: 2rem 1rem;
+  height:100%;
+  width: 20vw;
+  border-radius: 5px;
+}
+.home_card_title{
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 0.5rem;
+  color: rgb(8, 153, 39);
+  /* max-width: 70%; */
+}
+.home_card_description{
+  padding: 0rem 0.2rem;
+  color: rgb(124, 123, 123);
+  font-family: "Poppins";
+  font-size: 15px;
+}
+.home_card_price{
+color: rgb(248, 66, 66);
+font-size: 18px;
+padding: .5rem .8rem;
+}
+.card_actions{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding: .5rem 0rem;
+}
+.home_view{
+    background: transparent;
+    color: rgb(8, 153, 39);
+     transition: all .5s ease;
+       color: red;
+}
+.home_cart{
+   
+    transition: all .5s ease;
+      color: rgb(8, 153, 39);
+      /* color: red; */
+    background: transparent;
+}
+.card_underline{
+   position: absolute;
+    height: 0.1rem;
+    width: 15%;
+    background: rgb(223, 223, 223);
+    bottom: 40%;
+    transform: rotate(90deg);
+    left: 38%;
+}
+
+
+.card_view{
+  border: none;
+  background: transparent;
+  color: red;
+  font-size: 16px;
+  margin-left: -5px;
+}
+
+.out_of_stock{
+  background: transparent;
+  border: none;
+  font-size: 16px;
+}
+.out_of_stock:hover{
+  color: #999;
+}
+
+.add_to_cart{
+  border: none;
+  background: transparent;
+  color: green;
+  font-size: 16px;
+}
+
+
+.control_price_title{
+display: flex;
+justify-content: space-between;
+
+}
+
+@media screen and (max-width: 800px) {
+  .home_card_img{
+    height: 25vh;
+  }
+  .home_card_info{
+    height: 90%;
+    width: 95%;
+    padding: 0 .5rem;
+  
+  }
+ 
+  .home_card_title{
+    font-size: 18px;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  .control_price_title{
+    display: flex;
+     padding-top: 5px;
+  }
+  .home_card_price{
+    margin-top: -2px;
+    margin-left: -10px;
+  }
+ .card_actions{
+   /* display: flex;
+   flex-direction: column; */
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ 
+ } 
+ .card_underline{
+   display: none;
+ }
+ .card_view{
+   background-color: rgb(230, 7, 7);
+   width: 100%;
+   color: white;
+   margin: 0 auto;
+  border-radius: 25px;
+  margin-left: -5px;
+  padding-bottom: 5px;
+ }
+ .add_to_cart{
+   background-color: rgb(14, 136, 14);
+   width: 100%;
+   color: white;
+   margin: 0 auto;
+    border-radius: 25px;
+    padding-bottom: 5px;
+ } 
+ .out_of_stock{
+   background-color: lightgrey;
+   width: 100%;
+   color: #666;
+   margin: 0 auto;
+   border-radius: 25px;
+   padding-bottom: 5px;
+ }
+} 
+@media screen and  (max-width: 700px){
+  .table-head{
+    width: 78vw;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .cart_container{
+    margin-top: -110px;
+  }
+  .oder_sumary{
+    padding: 0 1rem;
+  }
+  .check-out{
+    margin-top: -90px;
+    padding: 0 1rem;
+  }
+  .checkout_btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (min-width: 810px) {
+  .home_card_img{
+    height: 23vh;
+  }
+  .home_card_info{
+    height: 100%;
+    width: 95%;
+    padding: 0 .5rem;
+  
+  }
+  .home_card{
+    height: 50vh;
+    
+  }
+  .home_card_title{
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+}
+@media screen and  (max-width: 700px){
+  .cart_gird{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95vw;
+  }
+  .control_price_title{
+    display: flex;
+  }
+  .table-head{
+    width: 95vw;
+    padding: 0 1rem;
+  }
+  .oder_sumary{
+    padding: 0 2rem;
+    width: 98vw;
+  }
+  .card_length{
+    width: 93vw;
+  }
+}
+
+@media screen and  (min-width: 1300px){
+  .home_card_title{
+    font-size: 16px;
+  }
+  .card_underline{
+    width: 3vw;
+     margin-left: 25px;
+    margin-bottom: 15px;
+  }
+  .home_card{
+    height: 50vh;
+    /* width: 37vw; */
+  }
+  .card_actions{
+     /* padding-bottom: 10px; */
+     margin-top: -10px;
+  }
+  
+
+  
+}
+
+
+@media screen and  (min-width: 1000px){
+  .cart_gird{
+    display: flex;
+  }
+   .table-head{
+     width: 65vw;
+   }
+   .oder_sumary{
+     padding: .5rem ;
+   }
+   .home_card_img{
+     height: 27vh;
+   }
+   .home_card{
+     height: 55vh;
+   }
+}
+
+@media screen and (max-width:550px) {
+  .new_arrivals{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+  .new_arrivals_product{
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+  }
+}

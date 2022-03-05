@@ -1,0 +1,68 @@
+.i_btn {
+  background: lightgray;
+  color: rgb(59, 59, 59);
+}
+.i_group {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  width: 22%;
+  border-radius: 10px;
+}
+.i_group label {
+  padding: 0.3rem 0.7rem;
+  color: #555;
+  width: 90%;
+  font-size: 19px;
+  border-radius: 10px;
+  cursor: pointer;
+   transition: all 0.5s ease;
+} 
+.i_group label:hover{
+  color: gray;
+  background: transparent;
+  border: 1px solid gray;
+}
+
+
+.i_input {
+  padding: 0.2rem 0;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgb(42, 43, 42);
+  outline: none;
+  font-size: 17px;
+}
+.i_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: -15px;
+  margin-top: 15px;
+  padding: 0 0.2rem;
+}
+.i_image_container {
+  display: flex;
+
+  padding-left: 5px;
+}
+.i_image_container1 {
+ position: relative;
+}
+.i_x {
+  position: absolute;
+  right: 0;
+  top: 7px;
+ color: gray;
+  border: none;
+   border-radius: 15px;
+   font-size: 16px;
+   cursor: pointer;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+.i_x:hover{
+  color: rgb(189, 9, 9);
+}
+

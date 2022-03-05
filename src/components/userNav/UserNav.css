@@ -1,0 +1,13 @@
+.usernav-ul{
+    background: transparent;
+    display: flex;
+   flex-direction: column;
+   width: 10rem;
+}
+.usernav-li{
+    padding: 1rem;
+
+}
+.usernav_link{
+   color: green;
+}

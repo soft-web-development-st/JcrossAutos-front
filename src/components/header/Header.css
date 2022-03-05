@@ -1,0 +1,136 @@
+ .nav{
+    background: rgb(16, 113, 76);
+    position: relative;
+    width: 100%;
+     position: relative;
+     color: white;
+}
+.nav_content{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   /* grid-column-gap: 100px; */
+
+}
+.nav_logo{
+    padding-top: 15px;
+    margin-left: 10rem;
+     
+}
+.nav_logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-left: -15px;
+}
+.red{
+    color: rgb(211, 1, 1);
+    font-weight: bold;
+}
+.g{
+    color: rgb(15, 196, 15);
+    font-weight: bold;
+}
+.logo_slogan{
+    margin-bottom: 5px;
+    color: white;
+}
+.nav_ul{
+    display: flex;
+    margin-left: 5rem;
+    margin-top: 25px;
+ 
+}
+.icon{
+ padding-left: 1px;
+ font-size: 20px;
+} 
+.home_car{
+    font-size: 25px;
+}
+
+.nav_ul li{
+    padding: .5rem 1.5rem;
+   font-size: 15px;
+   font-family: "Roboto", sans-serif ;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+li{
+    list-style-type: none;
+}
+.logout{
+    background: green;
+    padding: .7rem;
+    border-radius: 5px;
+}
+
+
+
+
+/* .icon{
+    margin-bottom: -2px;
+    margin-left: -2px;
+    padding-right: 3px;
+} */
+
+
+a:hover{
+    transition: all 0.5s ease;
+    color: rgb(14, 240, 108);
+}
+.showing{
+    color: rgb(12, 226, 102);
+}
+.badge{
+    color: white;
+   font-weight: 500;
+}  
+
+.border{
+    background: rgb(16, 113, 76);
+}
+
+.navBar{
+    background:  rgb(16, 113, 76);
+    padding: 1rem;
+}
+.logo_img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.j{
+    color: red;
+    font-weight: bolder;
+}
+.cross{
+    color: rgb(10, 196, 10);
+    font-weight: bolder;
+}
+.motors{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.img_logo{
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+.header_link{
+    font-size: 18px;
+}
+
+
+@media (max-width:700px){
+    
+    .logo_nav{
+     display: none;
+    }
+}
+ 

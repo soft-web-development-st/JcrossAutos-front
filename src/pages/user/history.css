@@ -1,0 +1,63 @@
+.history-container{
+    display: flex;
+    flex-direction: row;
+}
+.password-container{
+    display: flex;
+    flex-direction: row;
+}
+.password-col{
+    padding: 3rem;
+}
+.password-col h4{
+    color: #555;
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+}
+
+.form_password{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 90vw;
+ 
+}
+
+.form_password label{
+    font-size: 18px;
+    color: #555;
+}
+
+.form_password label span{
+    color: red;
+}.form_password input{
+    padding-top: 1rem;
+    padding-bottom: .3rem;
+    padding-left: .5rem;
+    margin-top: 1rem ;
+    border: none;
+    border-bottom: 1px solid green;
+    font-size: 18px;
+    outline: none;
+}
+.form_password input:focus{
+    outline: none;
+}
+::placeholder{
+    font-family: inherit;
+    font-size: 15px;
+}
+.password_btn{
+    padding: .8rem;
+    margin-top: 15px;
+    background: green;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.loading{
+    color: red;
+    font-family: cursive;
+}
