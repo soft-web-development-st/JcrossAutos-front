@@ -5,7 +5,7 @@ import StripeCheckOut from '../components/stripeCheckout/StripeCheckOut'
 import './stripe.css'
 
 const promise = loadStripe(
-  'pk_test_51KONMGGhU3eDJ5ec3yAXCSUcvVhJuzohOPU96V05KUNtxfe4qwPvdeswzcxS56KvEr4lwDYFaupq0ZzMJI9gswV900VicpjLO0'
+  "pk_test_51KZzDFI2gRAMeCBXAUxB4kVeKuRsPPXQ0XGXaUugcjvhwgGlSunImg7XOpkMvugEZbtDC9rHiCH8rA3EWjIezc6E00dsl9rOw1"
 );
 
 

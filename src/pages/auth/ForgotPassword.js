@@ -28,7 +28,7 @@ const ForgotPassword = ({ history }) => {
         setLoading(true)
 
         const config = {
-          url: "http://localhost:3000/login",
+          url: "http://143.198.113.77/login",
           handleCodeInApp: true,
         };
         
