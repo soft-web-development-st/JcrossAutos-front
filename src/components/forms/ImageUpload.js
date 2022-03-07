@@ -4,31 +4,27 @@ import Resizer from "react-image-file-resizer";
 import axios from "axios";
 import { useSelector } from "react-redux";
 
-import { AiFillCloseCircle } from 'react-icons/ai'
-
-
-
+import { AiFillCloseCircle } from "react-icons/ai";
 
 // import "antd/dist/antd.css";
 
-
-const ImageUpload = ({ values, setValues, setLoading ,loading}) => {
+const ImageUpload = ({ values, setValues, setLoading, loading }) => {
   // const [images, setImages] = useState([]);
 
   const { user } = useSelector((state) => ({ ...state }));
- 
+
   const imageUpload = (e) => {
     let files = e.target.files;
     let allUploadFiles = values.images;
-   
-    if (files) { 
+
+    if (files) {
       setLoading(true);
       for (let i = 0; i < files.length; i++) {
         Resizer.imageFileResizer(
           files[i],
           720,
           720,
-          "JEPG",
+          "RAW",
           100,
           0,
           (uri) => {
@@ -59,41 +55,47 @@ const ImageUpload = ({ values, setValues, setLoading ,loading}) => {
       }
     }
   };
-    
-    const handleImageRemove = (public_id) => {
-        setLoading(true)
-        console.log('REMOVE',public_id);
-        axios.post(`${process.env.REACT_APP_API}/removeimage`, { public_id }, {
-            headers: {
-                authtoken:user ? user.token : '',
-            }
-        }).then(res => {
-            setLoading(false)
-            const { images } = values
-            let filterImages = images.filter((item) => {
-                return item.public_id !== public_id
-            });
-            setValues({ ...values, images: filterImages });;
-        })
-            .catch(err => {
-                console.log(err);
-                setLoading(false)
-        })
-    }
+
+  const handleImageRemove = (public_id) => {
+    setLoading(true);
+    console.log("REMOVE", public_id);
+    axios
+      .post(
+        `${process.env.REACT_APP_API}/removeimage`,
+        { public_id },
+        {
+          headers: {
+            authtoken: user ? user.token : "",
+          },
+        }
+      )
+      .then((res) => {
+        setLoading(false);
+        const { images } = values;
+        let filterImages = images.filter((item) => {
+          return item.public_id !== public_id;
+        });
+        setValues({ ...values, images: filterImages });
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+      });
+  };
 
   return (
     <div className="i_group">
       <label className="">
-     <b> Upload Image </b> 
+        <b> Upload Image </b>
         <input
           type="file"
-          multiple 
+          multiple
           accept="images/*"
           hidden
           onChange={imageUpload}
-          />
-          </label>
-      
+        />
+      </label>
+
       <div className="i_image_container">
         {values.images &&
           values.images.map((image) => (
