@@ -1,5 +1,5 @@
 import React from "react";
-import Search from '../../components/forms/Search'
+import Search from '../forms/Search'
 import { Carousel } from "react-bootstrap";
 import main from '../../images/main.jpg'
 
