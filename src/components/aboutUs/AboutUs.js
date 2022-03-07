@@ -27,7 +27,7 @@ const AboutUs = () => {
                 </p>
               </div>
               <div className="about-us-info-right">
-                <img src="../images/about-us.jpg" alt="" />
+                <img src="../images/carousel6.jpg" alt="" />
               </div>
             </div>
             <div className="about-us-why-us">
