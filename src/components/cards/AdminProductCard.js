@@ -1,6 +1,6 @@
 import React from "react";
 import "./admin.css";
-import car from "../../images/car4.jpeg";
+import car from "../../images/car6.raw";
 import { EditFilled, DeleteFilled } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 

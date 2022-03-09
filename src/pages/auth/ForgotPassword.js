@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./forgotpassword.css";
-import image from '../../images/pw.jpg'
+import image from '../../images/pw.raw'
 
 //
 import { useSelector } from "react-redux";

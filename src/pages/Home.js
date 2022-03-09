@@ -12,7 +12,7 @@ import Jumbotron from "../components/cards/Jumbotron";
 import CategoryList from "../components/category/CategoryList";
 import SubList from "../components/sub/SubList";
 
-import main from "../images/main.jpg";
+
 import Search from "../components/forms/Search";
 import Stock from "../components/stock/Stock";
 import AboutUs from "../components/aboutUs/AboutUs";
@@ -35,15 +35,7 @@ const Home = () => {
       <div className="overlay"></div>
       {/* <img src={main} alt="main" className="main" /> */}
       <Carousels />
-      {/* <div className="main-search">
-        <div className="main-search-contents">
-          <h1>Find your Perfect Car Today!</h1>
-          <h3>Quality Cars. Best Prices.</h3>
-        </div>
-        <div className="main-search-form flex">
-          <Search />
-        </div>
-      </div> */}
+      
 
       <div className="home_jumbotron">
         <Jumbotron text={["Latest Cars", "New Arrivals!!", "Best Deals"]} />

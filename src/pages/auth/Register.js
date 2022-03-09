@@ -89,7 +89,7 @@ const Register = ({history}) => {
       <div>
         <img
           className="register_image"
-          src="./images/registercar.jpg"
+          src="./images/registercar.raw"
           alt="logo"
         />
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './ProductCard.css'
-import car from "../../images/car4.jpeg";
+import car from "../../images/car6.raw";
 import { EyeOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { MdOutlineDangerous } from "react-icons/md";
 import { Link } from 'react-router-dom';

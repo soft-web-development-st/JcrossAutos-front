@@ -3,7 +3,7 @@ import { Card, Tabs } from "antd";
 import { Link } from "react-router-dom";
 import { HeartOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import "./SingleProduct.css";
-import car from "../../images/car6.jpeg";
+import car from "../../images/car6.raw";
 import ProductListItem from "./ProductListItem";
 import StarRating from "react-star-ratings";
 import RatingModal from "../modal/RatingModal";

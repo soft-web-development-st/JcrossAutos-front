@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./login.css";
-import car from '../../images/car6.jpeg'
+import car from '../../images/car6.raw'
 // import axios
 
 import axios from "axios";

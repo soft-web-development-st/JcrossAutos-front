@@ -1,6 +1,6 @@
 import React from "react";
 import ModalImage from "react-modal-image-responsive";
-import car from "../../images/car4.jpeg";
+import car from "../../images/car6.raw";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import {CheckCircleOutlined,CloseCircleOutlined,CloseOutlined} from '@ant-design/icons'

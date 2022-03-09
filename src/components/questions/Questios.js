@@ -10,19 +10,16 @@ const Questios = () => {
                 Have Questions? Feel Free to Ask...
               </h4>
               <div className="questions-contact flex">
-                <div className="questions-phone flex">
+                <div className="questions-phone ">
                   <i className="fas fa-phone"></i>
                   <p>(248) 133-2343</p>
                 </div>
                 <div className="questions-message">
-                  <a href="#">
+                  <a href="https://www.facebook.com/jcross.jp">
                     <i className="fab fa-facebook-f"></i>
                   </a>
                   <a href="#">
                     <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
                   </a>
                   <a href="#">
                     <i className="fab fa-youtube"></i>

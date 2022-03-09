@@ -1,34 +1,19 @@
 import React from "react";
 import Search from '../forms/Search'
 import { Carousel } from "react-bootstrap";
-import main from '../../images/main.jpg'
+import car5 from '../../images/car5.raw'
+import car9 from "../../images/carousel8.raw";
+
 
 const Carousels = () => {
   return (
     <div>
       <Carousel fade>
-        {/* <Carousel.Item interval={4000}>
-          <img
-            className="d-block w-100 main"
-            src="./images/carousel9.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <div className="main-search fill">
-              <div className="main-search-contents">
-                <h1>Find your Perfect Car Today!</h1>
-                <h3>Quality Cars. Best Prices.</h3>
-              </div>
-              <div className="main-search-form">
-                <Search />
-              </div>
-            </div>
-          </Carousel.Caption>
-        </Carousel.Item> */}
+    
         <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 main position"
-            src="./images/carousel8.jpg"
+            src={car9}
             alt="Second slide"
           />
 
@@ -47,7 +32,7 @@ const Carousels = () => {
         <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 main"
-            src="./images/car5.jpeg"
+            src={car5}
             alt="Third slide"
           />
 

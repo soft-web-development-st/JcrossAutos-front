@@ -1,4 +1,7 @@
 import React from 'react';
+import news1 from "../../images/news-1.raw";
+import news3 from "../../images/news-3.raw";
+import news2 from "../../images/news2.raw";
 
 const LatesNews = () => {
     return (
@@ -11,7 +14,7 @@ const LatesNews = () => {
             <div className="news-articles-cards">
               <div className="news-articles-card-item ">
                 <div className="img-container">
-                  <img src="../images/news-1.jpg" alt="" />
+                  <img src={news1} alt="" />
                 </div>
                 <div className="news-articles-content">
                   <h5 className="news-article-tag">Maintenance</h5>
@@ -38,7 +41,7 @@ const LatesNews = () => {
               </div>
               <div className="news-articles-card-item news-articles-card-item-1">
                 <div className="img-container">
-                  <img src="../images/news-2.jpg" alt="" />
+                  <img src={news2} alt="" />
                 </div>
                 <div className="news-articles-content">
                   <h5 className="news-article-tag">Tires</h5>
@@ -65,7 +68,7 @@ const LatesNews = () => {
               </div>
               <div className="news-articles-card-item news-articles-card-item-2">
                 <div className="img-container">
-                  <img src="../images/news-3.jpg" alt="" />
+                  <img src={news3} alt="" />
                 </div>
                 <div className="news-articles-content">
                   <h5 className="news-article-tag">Adventure</h5>

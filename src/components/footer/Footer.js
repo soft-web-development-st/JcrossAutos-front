@@ -42,8 +42,6 @@ const Footer = () => {
                     Chiba-Ken Nodashi Kimagase 2720-1
                   </p>
                 </div>
-                
-    
               </div>
             </div>
             <div className="seperator">
@@ -82,14 +80,11 @@ const Footer = () => {
                 <div className="footer-contents-item subscribe">
                   <h4 className="footer-title">Social Media </h4>
                   <div className="footer-social-media-icons">
-                    <a href="#">
+                    <a href="https://www.facebook.com/jcross.jp">
                       <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com/jcross.jp">
                       <i className="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
                     </a>
                     <a href="#">
                       <i className="fab fa-youtube"></i>
@@ -100,18 +95,25 @@ const Footer = () => {
               <div className="footer-contents-item credit">
                 <div className="credit-card-info flex">
                   <div className="footer-credit-info">
+                    <h4 className="text-center text-light">Working Hours</h4>
+                    <p>
+                      Mondays & Tuesdays : <span>8am - 4pm </span>
+                    </p>
+                    <p>
+                      {" "}
+                      Wednesdays & Thursday : <span>9am - 5pm </span>
+                    </p>
+                    <p>
+                      Fridays & Saturdays : <span>8am - 6pm </span>
+                    </p>
+
                     <p>
                       We will help you find the perfect car that fits your
-                      budget!
+                      budget At JcrossAutos!!
                     </p>
                   </div>
 
-                  <div className="credit-card-pics">
-                    {/* <img src="../images/footer-amex.jpeg" alt="" /> */}
-                    <img src="../images/footer-visa.jpeg" alt="" />
-                    <img src="../images/footer-mastercard.jpeg" alt="" />
-                    <img src="../images/footer-discover.jpeg" alt="" />
-                  </div>
+                  <div className="credit-card-pics"></div>
                 </div>
               </div>
             </div>
