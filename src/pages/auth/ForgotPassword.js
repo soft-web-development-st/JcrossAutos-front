@@ -28,7 +28,7 @@ const ForgotPassword = ({ history }) => {
         setLoading(true)
 
         const config = {
-          url: "http://143.198.113.77/login",
+          url: "https://jcrossautosapi.herokuapp.com/login",
           handleCodeInApp: true,
         };
         
