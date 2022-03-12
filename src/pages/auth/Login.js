@@ -3,14 +3,14 @@ import "./login.css";
 import car from '../../images/car6.raw'
 // import axios
 
-import axios from "axios";
+
 
 //
 import { useDispatch, useSelector } from "react-redux";
 
 // react icons
 import { AiOutlineGoogle, AiOutlineMail } from "react-icons/ai";
-import { BsLock, BsMailbox } from "react-icons/bs";
+import { BsLock } from "react-icons/bs";
 
 // fire base hooks
 import { auth, googleAuthProvider } from "../../firebase";
