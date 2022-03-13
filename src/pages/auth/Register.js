@@ -33,7 +33,7 @@ const Register = ({history}) => {
     e.preventDefault();
 
     const config = {
-      url: "https://jcrossautosapi.herokuapp.com/complete",
+      url: "http://159.223.152.111//complete",
       handleCodeInApp: true,
     };
 
