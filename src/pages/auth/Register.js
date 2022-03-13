@@ -9,6 +9,8 @@ import { useSelector } from "react-redux";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
 
+import registercar from '../../images/registercar.jpg'
+
 
 const Register = ({history}) => {
   const [email, setEmail] = useState("");
@@ -33,7 +35,7 @@ const Register = ({history}) => {
     e.preventDefault();
 
     const config = {
-      url: "http://159.223.152.111//complete",
+      url: "http://159.223.152.111/register/complete",
       handleCodeInApp: true,
     };
 
@@ -89,7 +91,7 @@ const Register = ({history}) => {
       <div>
         <img
           className="register_image"
-          src="./images/registercar.raw"
+          src={registercar}
           alt="logo"
         />
       </div>
