@@ -2,7 +2,8 @@ import React from 'react';
 import { useRef } from 'react';
 import Footer from '../components/footer/Footer';
 import { BsFillTelephoneOutboundFill } from 'react-icons/bs'
-import {toast} from 'react-toastify'
+import { toast } from 'react-toastify'
+import contact from '../images/about.raw'
 
 import emailjs from 'emailjs-com'
 
@@ -40,7 +41,7 @@ const Contact = () => {
           <h1 className="h1">
             Contact <span>Us </span> <BsFillTelephoneOutboundFill />
           </h1>
-          <img className="contact_img" src="../images/about-us.jpg" />
+          <img className="contact_img" alt='ima' src={contact} />
         </div>
 
         <div className="container pt-5 ">
