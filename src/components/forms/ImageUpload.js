@@ -22,9 +22,9 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
       for (let i = 0; i < files.length; i++) {
         Resizer.imageFileResizer(
           files[i],
-          720,
-          720,
-          "RAW",
+          300,
+          300,
+          "JPEG",
           100,
           0,
           (uri) => {
@@ -85,7 +85,7 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
 
   return (
     <div className="i_group">
-      <label className="">
+      <label className="btn btn-primary">
         <b> Upload Image </b>
         <input
           type="file"

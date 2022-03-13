@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./registrationcomplete.css";
 
 import { useDispatch, useSelector } from "react-redux";
-
+import c from '../../images/c.jpg'
 
 import { BsLock } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
@@ -100,7 +100,7 @@ const RegisterComplete = ({ history }) => {
             onChange={emailHandler}
             placeholder="Enter your email"
             required
-            disabled
+           
           />
 
           <AiOutlineMail className="p" />
@@ -122,7 +122,7 @@ const RegisterComplete = ({ history }) => {
   };
   return (
     <div className="completeregistration">
-      <img className="complete_image" src="../images/car7.webp" alt="" />
+      <img className="complete_image" src={ c}alt="" />
       <div className="registrationComplete_info">
         <div className="">
           <h4 className="registerComplete__title">
