@@ -21,20 +21,11 @@ const CategoryList = () => {
         {loading ? (
           <LoadingOutlined className="cl_loading" />
         ) : (
-          <div className="form-group">
-            <label> Make</label>
-              <select name="category" className="form-control">
-               
-              {categories.length > 0 &&
-                categories.map((c) => (
-                  
-                  <option key={c._id} value={c._id}>
-                    
-                    {c.name}
-                  </option>
-                ))}
-            </select>
-          </div>
+          categories.map((c) => (
+            <Link key={c._id} className="cl_link" to={`/category/${c.slug}`}>
+              {c.name}
+            </Link>
+          ))
         )}
       </div>
     </div>

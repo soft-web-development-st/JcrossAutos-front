@@ -24,21 +24,16 @@ const SubList = () => {
           <div className="form-group">
             <label> Model</label>
               <select name="category" className="form-control">
-                Choose your Model
-              {subs.length > 0 &&
-                subs.map((s) => (
-                  <option key={s._id} value={s._id}>
-                   {s.name}
-                  </option>
-                ))}
+                Choose your
+              {  subs.map((s) => (
+             <Link key={s._id} className="cl_link" to={`/sub/${s.slug}`}>
+               {s.name}
+             </Link>
+           ))}
             </select>
           </div>
 
-          // subs.map((s) => (
-          //   <Link key={s._id} className="cl_link" to={`/sub/${s.slug}`}>
-          //     {s.name}
-          //   </Link>
-          // ))
+         
         )}
       </div>
     </div>
