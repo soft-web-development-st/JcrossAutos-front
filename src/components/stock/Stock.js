@@ -77,7 +77,10 @@ const Stock = () => {
             </div>
               <h1 className="model">Model</h1>
             <div className="search-stock-form-item search-stock-form-item-1">
+              <div className="category_list">
+                
               <SubList />
+              </div>
             </div>
 
             <p className="text-center theme-p search-p">
