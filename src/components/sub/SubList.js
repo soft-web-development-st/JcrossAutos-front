@@ -21,20 +21,13 @@ const SubList = () => {
         {loading ? (
           <LoadingOutlined className="cl_loading" />
         ) : (
-          <div className="form-group">
-            <label> Model</label>
-              <select name="category" className="form-control">
-                Choose your
-              {  subs.map((s) => (
-             <Link key={s._id} className="cl_link" to={`/sub/${s.slug}`}>
-               {s.name}
-             </Link>
-           ))}
-            </select>
-          </div>
-
-         
+          subs.map((s) => (
+            <Link key={s._id} className="cl_link" to={`/sub/${s.slug}`}>
+              {s.name}
+            </Link>
+          ))
         )}
+            
       </div>
     </div>
   );
