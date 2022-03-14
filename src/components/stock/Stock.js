@@ -70,18 +70,18 @@ const Stock = () => {
               </div>
             </div>
             <div className="search-stock-form-item search-stock-form-item-1">
-              <h1 className="make">Make</h1>
+              <h1 className="make">Search By Maker</h1>
               <div className="category_list">
                 <CategoryList />
               </div>
             </div>
               <h1 className="model">Model</h1>
-            <div className="search-stock-form-item search-stock-form-item-1">
+            {/* <div className="search-stock-form-item search-stock-form-item-1">
               <div className="category_list">
                 
               <SubList />
               </div>
-            </div>
+            </div> */}
 
             <p className="text-center theme-p search-p">
               Do hard work in silence and let your new car make some noise. shop

@@ -39,8 +39,8 @@ const ProductListItem = ({ product }) => {
               </li >
               <li className="pli">
 
-                  <span className="pli_category" to={`category/${category}`}> Category </span>
-                  <span><span className="pli_category"  to={`subs/${subs}`}>Sub Category</span></span>
+           <span className="pli_category" to={`category/${category}`}> Category </span>
+           <span><span className="pli_category"  to={`subs/${subs}`}>Sub Category</span></span>
               </li>
       </ul>
     </div>
