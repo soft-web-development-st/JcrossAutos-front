@@ -26,14 +26,9 @@ const CategoryList = () => {
             <select name="category" className="form-control">
               {categories.length > 0 &&
                 categories.map((c) => (
-                  <Link
-                    className="text-dark"
-                    key={c._id}
-                    value={c._id}
-                    to={`/categories/${c.slug}`}
-                  >
-                    {c.name}
-                  </Link>
+                  <option key={c._id} value={c._id}>
+                    <Link to={`/categories/${c.slug}`}>{c.name}</Link>
+                  </option>
                 ))}
             </select>
           </div>
