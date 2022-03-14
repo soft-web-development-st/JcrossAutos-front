@@ -16,8 +16,8 @@ const Stock = () => {
     getCategories().then((res) => setCategories(res.data));
   };
 
-
-  return (
+  const showCategories = () => {};
+  return ( 
     <div>
       <section className="search-stock">
         <div className="container">
@@ -30,67 +30,66 @@ const Stock = () => {
 
           <div className="search-stock-content">
             <div className="search-stock-item-checkbox">
-              <div className="search-stock-form-item search-stock-form-item-1">
-                <div class="search-stock-checkbox">
-                  <div className="search-stock-checkbox-item">
-                    <label className="checkbox">
-                      <input
-                        className="checkbox-input"
-                        type="checkbox"
-                        name="myCheckboxName"
-                        id="myCheckboxId"
-                      />
-                      <div className="checkbox-box"></div>
-                      New
-                    </label>
-                  </div>
-                  <div className="search-stock-checkbox-item">
-                    <label className="checkbox1" >
-                      <input
-                        className="checkbox-input1"
-                        type="checkbox"
-                        name="myCheckboxName"
-                        id="myCheckboxId1"
-                      />
-                      <div className="checkbox-box1"></div>
-                      Used
-                    </label>
-                  </div>
-                  <div className="search-stock-checkbox-item">
-                    <label className="checkbox2" >
-                      <input
-                        className="checkbox-input2"
-                        type="checkbox"
-                        name="myCheckboxName"
-                        id="myCheckboxId2"
-                      />
-                      <div className="checkbox-box2"></div>
-                      Demo
-                    </label>
-                  </div>
+              <div className="search-stock-checkbox">
+                <div className="search-stock-checkbox-item">
+                  <label className="checkbox" htmlFor="myCheckboxId">
+                    <input
+                      className="checkbox-input"
+                      type="checkbox"
+                      name="myCheckboxName"
+                      id="myCheckboxId"
+                    />
+                    <div className="checkbox-box"></div>
+                    New
+                  </label>
                 </div>
-                <h1 className="make">Make</h1>
-                <div className="category_list">
-                  <CategoryList />
+                <div className="search-stock-checkbox-item">
+                  <label className="checkbox1" htmlFor="myCheckboxId1">
+                    <input
+                      className="checkbox-input1"
+                      type="checkbox"
+                      name="myCheckboxName"
+                      id="myCheckboxId1"
+                    />
+                    <div className="checkbox-box1"></div>
+                    Used
+                  </label>
+                </div>
+                <div className="search-stock-checkbox-item">
+                  <label className="checkbox2" htmlFor="myCheckboxId2">
+                    <input
+                      className="checkbox-input2"
+                      type="checkbox"
+                      name="myCheckboxName"
+                      id="myCheckboxId2"
+                    />
+                    <div className="checkbox-box2"></div>
+                    Demo
+                  </label>
                 </div>
               </div>
-              <h1 className="model">Model</h1>
-              <div className="search-stock-form-item search-stock-form-item-1">
-                <SubList />
-              </div>
-
-              <p className="text-center theme-p search-p">
-                Do hard work in silence and let your new car make some noise.
-                shop now with Jcross Motors and enjoy your new car for a life
-                time
-              </p>
-              <button className="search-stock-btn">
-                <Link className="search-stock-link" to="/shop">
-                  {" "}
-                  Search Stocks
-                </Link>{" "}
-              </button>
             </div>
+            <div className="search-stock-form-item search-stock-form-item-1">
+              <h1 className="make">Make</h1>
+              <div className="category_list">
+                <CategoryList />
+              </div>
+            </div>
+              <h1 className="model">Model</h1>
+            <div className="search-stock-form-item search-stock-form-item-1">
+              <SubList />
+            </div>
+
+            <p className="text-center theme-p search-p">
+              Do hard work in silence and let your new car make some noise. shop
+              now with Jcross Motors and enjoy your new car for a life time
+            </p>
+            <button className="search-stock-btn">
+              <Link className="search-stock-link" to="/shop">
+                {" "}
+                Shop Now
+              </Link>{" "}
+            </button>
           </div>
         </div>
       </section>

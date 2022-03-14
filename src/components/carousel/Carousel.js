@@ -28,7 +28,7 @@ const Carousels = () => {
               </div>
             </div>
           </Carousel.Caption>
-        </Carousel.Item>
+        </Carousel.Item> 
         <Carousel.Item interval={4000}>
           <img
             className="d-block w-100 main"
