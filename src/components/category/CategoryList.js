@@ -23,11 +23,18 @@ const CategoryList = () => {
         ) : (
           <div className="form-group">
             <label> Make</label>
-            <select name="category"
-              className="form-control">
-              {categories.length > 0 && categories.map((c) => (
-                <Link key={c._id} value={c._id} to={`/categories/${c.slug}`} >{c.name}</Link>
-              ))}
+            <select name="category" className="form-control">
+              {categories.length > 0 &&
+                categories.map((c) => (
+                  <Link
+                    className="text-dark"
+                    key={c._id}
+                    value={c._id}
+                    to={`/categories/${c.slug}`}
+                  >
+                    {c.name}
+                  </Link>
+                ))}
             </select>
           </div>
         )}

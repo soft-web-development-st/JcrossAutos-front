@@ -27,7 +27,7 @@ const SubList = () => {
               <select name="category"
               className="form-control">
                 {subs.length > 0 && subs.map((s) => (
-                  <Link  key={s._id} value={s._id} to={`/sub/${s.slug}`} >{ s.name}</Link>
+                  <Link className="text-dark"  key={s._id} value={s._id} to={`/sub/${s.slug}`} >{ s.name}</Link>
              ))}
               </select>
        </div>
