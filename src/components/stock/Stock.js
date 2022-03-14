@@ -30,45 +30,6 @@ const Stock = () => {
 
           <div className="search-stock-content">
             <div className="search-stock-item-checkbox">
-              <div className="search-stock-checkbox">
-                <div className="search-stock-checkbox-item">
-                  <label className="checkbox" htmlFor="myCheckboxId">
-                    <input
-                      className="checkbox-input"
-                      type="checkbox"
-                      name="myCheckboxName"
-                      id="myCheckboxId"
-                    />
-                    <div className="checkbox-box"></div>
-                    New
-                  </label>
-                </div>
-                <div className="search-stock-checkbox-item">
-                  <label className="checkbox1" htmlFor="myCheckboxId1">
-                    <input
-                      className="checkbox-input1"
-                      type="checkbox"
-                      name="myCheckboxName"
-                      id="myCheckboxId1"
-                    />
-                    <div className="checkbox-box1"></div>
-                    Used
-                  </label>
-                </div>
-                <div className="search-stock-checkbox-item">
-                  <label className="checkbox2" htmlFor="myCheckboxId2">
-                    <input
-                      className="checkbox-input2"
-                      type="checkbox"
-                      name="myCheckboxName"
-                      id="myCheckboxId2"
-                    />
-                    <div className="checkbox-box2"></div>
-                    Demo
-                  </label>
-                </div>
-              </div>
-            </div>
             <div className="search-stock-form-item search-stock-form-item-1">
               <h1 className="make">Make</h1>
               <div className="category_list">
@@ -91,7 +52,8 @@ const Stock = () => {
               </Link>{" "}
             </button>
           </div>
-        </div>
+          </div>
+          </div>
       </section>
     </div>
   );

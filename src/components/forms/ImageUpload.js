@@ -85,7 +85,7 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
 
   return (
     <div className="i_group">
-      <label className="btn btn-primary">
+      <label className="btn btn-secondary">
         <b> Upload Image </b>
         <input
           type="file"
