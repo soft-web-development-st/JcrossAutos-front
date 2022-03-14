@@ -69,7 +69,7 @@ const Stock = () => {
                 </div>
               </div>
             </div>
-            <div className="search-stock-form-item search-stock-form-item-1">
+            <div className="search-stock-form-item ">
               <h1 className="make">Search By Maker</h1>
               <div className="category_list">
                 <CategoryList />
