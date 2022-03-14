@@ -259,7 +259,7 @@ a {
 }
 .search-stock-form-item-1{
 padding: .5rem;
-
+margin-bottom: 1rem;
 }
  .search-stock-form-item-1::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
