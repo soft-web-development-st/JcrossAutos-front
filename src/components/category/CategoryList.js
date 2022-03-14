@@ -20,21 +20,14 @@ const CategoryList = () => {
       <div className="cl_row">
         {loading ? (
           <LoadingOutlined className="cl_loading" />
-        ) : (<>
-             <label>Make</label>
-            <select name="category" >
-              <option >Choose a Make
-          { categories.map((c) => (
+        ) : (
+          categories.map((c) => (
             <Link key={c._id} className="cl_link" to={`/category/${c.slug}`}>
               {c.name}
             </Link>
-           ) )}
-             </option> 
-           
-          </select>
-           </>
+          ))
         )}
-          </div>
+      </div>
     </div>
   );
 };
