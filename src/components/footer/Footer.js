@@ -11,7 +11,7 @@ const Footer = () => {
               <h4 className="footer-title">Contact Us</h4>
               <p className="contact-info">
                 For all enquires, Please email JcrossAutos, call us 
-               We are at your services ...thanks for trust JcrossAutos. 
+               We are at your services. Thanks for trusting JcrossAutos. 
               </p>
               <div className="footer-contact footer-phone flex">
                 <div className="footer-icon phone-icon">
