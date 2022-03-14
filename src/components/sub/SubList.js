@@ -23,7 +23,7 @@ const SubList = () => {
         ) : (
             
             <div className="form-group">
-              <label> Make</label>
+              <label> Model</label>
               <select name="category"
               className="form-control">
                 {subs.length > 0 && subs.map((s) => (
