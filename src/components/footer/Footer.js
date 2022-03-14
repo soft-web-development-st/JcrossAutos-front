@@ -10,9 +10,8 @@ const Footer = () => {
             <div className="footer-contents-item contact">
               <h4 className="footer-title">Contact Us</h4>
               <p className="contact-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                distinctio voluptatum mollitia. Delectus, possimus optio cumque
-                nisi debitis quidem hic!
+                For all enquires, Please email JcrossAutos, call us 
+               We are at your services ...thanks for trust JcrossAutos. 
               </p>
               <div className="footer-contact footer-phone flex">
                 <div className="footer-icon phone-icon">

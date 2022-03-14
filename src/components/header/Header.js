@@ -12,7 +12,14 @@ import { RiAdminFill } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
-import {Navbar,Container,Nav,Form,FormControl,Button} from 'react-bootstrap'
+import {
+  Navbar,
+  Container,
+  Nav,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap";
 
 // dropdown
 // import Dropdown from "../UI/Dropdown";
@@ -51,7 +58,7 @@ const Header = () => {
     history.push("/login");
   };
 
-  return ( 
+  return (
     <>
       {/* nav 1 */}
       {/* <div className="border">
@@ -96,7 +103,7 @@ const Header = () => {
       {/* end of nav one */}
 
       {/* bothStrap... */}
-      <Navbar className="navBar" expand="lg" variant="dark" >
+      <Navbar className="navBar" expand="lg" variant="dark">
         <Container>
           <Nav>
             <Nav.Link></Nav.Link>
@@ -109,12 +116,11 @@ const Header = () => {
                   src={logo1}
                   width="50"
                   height="50"
-                   className="d-inline-block align-top img_logo"
+                  className="d-inline-block align-top img_logo"
                 />{" "}
-                
                 <span className="j">J</span>{" "}
                 <span className="cross">CROSS</span>{" "}
-                <span className="motors">Motors</span>
+                <span className="motors">Autos</span>
               </Navbar.Brand>
             </Container>
           </Navbar.Brand>
@@ -193,7 +199,7 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link  href="#deets">
+              <Nav.Link href="#deets">
                 <li>
                   {!user && (
                     <NavLink
@@ -209,12 +215,7 @@ const Header = () => {
               <Nav.Link href="#deets">
                 <li>
                   {user && (
-                    <NavLink
-                      className="logout"
-                      to="/login"
-                      onClick={logout}
-                      className="header_link"
-                    >
+                    <NavLink className="logout" to="/login" onClick={logout}>
                       {" "}
                       <AiOutlineLogout className="icon" /> Logout
                     </NavLink>
