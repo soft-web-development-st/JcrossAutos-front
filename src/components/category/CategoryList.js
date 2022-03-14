@@ -23,11 +23,12 @@ const CategoryList = () => {
         ) : (
           <div className="form-group">
             <label> Make</label>
-            <select name="category" className="form-control">
+              <select name="category" className="form-control">
+                Choose your Make
               {categories.length > 0 &&
                 categories.map((c) => (
                   <option key={c._id} value={c._id}>
-                    <Link to={`/categories/${c.slug}`}>{c.name}</Link>
+                    {c.name}
                   </option>
                 ))}
             </select>
