@@ -75,14 +75,6 @@ const Stock = () => {
                 <CategoryList />
               </div>
             </div>
-              <h1 className="model">Model</h1>
-            {/* <div className="search-stock-form-item search-stock-form-item-1">
-              <div className="category_list">
-                
-              <SubList />
-              </div>
-            </div> */}
-
             <p className="text-center theme-p search-p">
               Do hard work in silence and let your new car make some noise. shop
               now with Jcross Motors and enjoy your new car for a life time
