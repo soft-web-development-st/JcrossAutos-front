@@ -26,14 +26,12 @@ const CategoryList = () => {
               <select name="category" className="form-control">
                
               {categories.length > 0 &&
-                  categories.map((c) => (
-                    <option value=" Choose your Make">
-                       Choose your Make
-                    <option key={c._id} value={c._id}>
-
+                categories.map((c) => (
+                  
+                  <option key={c._id} value={c._id}>
+                    
                     {c.name}
                   </option>
-                    </option>
                 ))}
             </select>
           </div>
