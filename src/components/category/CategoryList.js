@@ -25,9 +25,9 @@ const CategoryList = () => {
             <select name="category" >
               <option >Choose a Make
           { categories.map((c) => (
-            <option key={c._id} className="cl_link">
+            <Link key={c._id} className="cl_link" to={`/category/${c.slug}`}>
               {c.name}
-            </option>
+            </Link>
            ) )}
              </option> 
            
