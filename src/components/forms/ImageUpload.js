@@ -86,15 +86,14 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
   return (
     <div className="i_group">
       <label className="btn btn-outline-secondary">
-        <b> Upload  </b>
+        <b> Upload Image </b>
         <input
           type="file"
           multiple
           accept="images/*"
           hidden
           onChange={imageUpload}
-        /> 
-        <span>Image</span>
+        />
       </label>
 
       <div className="i_image_container">
