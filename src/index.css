@@ -286,6 +286,12 @@ padding: .5rem;
 .search-p{
   padding: .5rem 0;
 }
+.make{
+  color: white;
+}
+.search-stock-checkbox{
+  margin: 0 auto;
+}
 
 /* Checkbox */
 .search-stock-item-checkbox {
@@ -491,6 +497,9 @@ padding: .5rem;
 .testimonials {
   padding: 4rem;
   background-color: var(--background-grey-2);
+}
+.search-p{
+  padding-top: 1rem;
 }
 
 .search-by-top {
