@@ -8,7 +8,7 @@ grid-template-columns: 1fr 1fr;
   background:rgb(16, 113, 76);
   height: 15vh;
   padding-top: 2rem;
-    color: rgb(10, 196, 10);
+    color: white;
   font-size: 40px;
   font-family: 'Poppins';
 } 
