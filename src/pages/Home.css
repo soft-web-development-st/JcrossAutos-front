@@ -8,9 +8,8 @@ grid-template-columns: 1fr 1fr;
   background:rgb(16, 113, 76);
   height: 15vh;
   padding-top: 2rem;
-  color:white;
-  font-size: 50px;
-  font-weight: bold;
+    color: rgb(10, 196, 10);
+  font-size: 40px;
   font-family: 'Poppins';
 } 
 .home_new {
@@ -170,7 +169,7 @@ grid-template-columns: 1fr 1fr 1fr ;
 /* grid-column-gap: 5rem; */
 }
 .pagination{
-  transform: translate(35%, 150%);
+  transform: translate(40%, 150%);
    margin-bottom: 50px;
 }
 

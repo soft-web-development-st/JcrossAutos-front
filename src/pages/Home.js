@@ -35,9 +35,8 @@ const Home = () => {
       <div className="overlay"></div>
       {/* <img src={main} alt="main" className="main" /> */}
       <Carousels />
-      
 
-      <div className="home_jumbotron">
+      <div className="home_jumbotron ">
         <Jumbotron text={["Latest Cars", "New Arrivals!!", "Best Deals"]} />
       </div>
 
@@ -57,10 +56,13 @@ const Home = () => {
         </div>
       </MediaQuery>
       <MediaQuery maxWidth={500}>
-          <h1 className="text-center mt-4 text-danger bg-light p-2">RECOMMENDED</h1>
-         <NewArrivalsNOPagination/>
+        <h1 className="text-center mt-4 text-danger bg-light p-2">
+          RECOMMENDED
+        </h1>
+        <NewArrivalsNOPagination />
       </MediaQuery>
-      <br /><br />
+      <br />
+      <br />
       <AboutUs />
       <br />
       <Accodion />

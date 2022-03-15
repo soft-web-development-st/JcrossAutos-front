@@ -1,9 +1,12 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+ 
  .nav{
     background: rgb(16, 113, 76);
     position: relative;
     width: 100%;
      position: relative;
      color: white;
+     font-family: 'Noto Sans Display', sans-serif;
 }
 .nav_content{
     display: grid;
@@ -124,13 +127,14 @@ a:hover{
 }
 .header_link{
     font-size: 18px;
+    font-family: 'Noto Sans Display', sans-serif;
 }
 
 
-@media (max-width:700px){
+ @media (max-width:700px){
     
-    .logo_nav{
+    .motors{
      display: none;
     }
-}
- 
+} 
+   

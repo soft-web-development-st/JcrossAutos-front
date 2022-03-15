@@ -98,11 +98,8 @@ const Header = () => {
       {/* bothStrap... */}
       <Navbar className="navBar" expand="lg" variant="dark" >
         <Container>
-          <Nav>
-            <Nav.Link></Nav.Link>
-          </Nav>
           <Navbar.Brand className="logo_nav" href="#home">
-            <Container>
+           
               <Navbar.Brand href="/">
                 <img
                   alt=""
@@ -114,9 +111,9 @@ const Header = () => {
                 
                 <span className="j">J</span>{" "}
                 <span className="cross">CROSS</span>{" "}
-                <span className="motors">Autos</span>
+                <span className="motors">autos</span>
               </Navbar.Brand>
-            </Container>
+            
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
