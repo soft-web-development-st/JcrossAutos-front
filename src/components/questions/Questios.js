@@ -1,4 +1,5 @@
 import React from 'react';
+import {AiOutlineQuestionCircle} from 'react-icons/ai'
 
 const Questios = () => {
     return (
@@ -7,14 +8,25 @@ const Questios = () => {
           <div className="container">
             <div className="questions-content flex">
               <h4 className="questions-title">
-                Have Questions? Feel Free to Ask...
+                Have Questions? Feel Free to Ask{" "}
+                <AiOutlineQuestionCircle className="question_icon" />
               </h4>
-              <div className="questions-contact flex">
+              <div className="questions-contact">
                 <div className="questions-phone ">
-                  <i className="fas fa-phone"></i>
-                  <p>(248) 133-2343</p>
+                  <span>
+                    <p>
+                      {" "}
+                      <i className="fas fa-phone"></i> +8170-1782-1131
+                    </p>
+                  </span>
                 </div>
+                <p>
+                  Email Address:{" "}
+                  <span className="questin_email">jcrossmd14@gamil.com</span>
+                </p>
+
                 <div className="questions-message">
+                  Connet with us... { ' '}
                   <a href="https://www.facebook.com/jcross.jp">
                     <i className="fab fa-facebook-f"></i>
                   </a>
