@@ -22,10 +22,10 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
       for (let i = 0; i < files.length; i++) {
         Resizer.imageFileResizer(
           files[i],
-          260,
-          500,
+          800,
+          800,
           "JPEG",
-          100,
+          50,
           0,
           (uri) => {
             axios
