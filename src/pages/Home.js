@@ -9,11 +9,10 @@ import BestDeals from "../components/home/BestDeals";
 // Jumbotron import
 import Jumbotron from "../components/cards/Jumbotron";
 
-import CategoryList from "../components/category/CategoryList";
-import SubList from "../components/sub/SubList";
 
 
-import Search from "../components/forms/Search";
+
+
 import Stock from "../components/stock/Stock";
 import AboutUs from "../components/aboutUs/AboutUs";
 import Testimonials from "../components/testimonials/Testimonials";

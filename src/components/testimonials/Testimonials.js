@@ -20,7 +20,7 @@ const Testimonials = () => {
                 <img
                   className="testimonial-person"
                   src={testimonal_person_4}
-                  alt=""
+                  alt="" 
                 />
                 <div className="testimonial-card-item-content flex">
                   <h5>Jacie Sarca</h5>

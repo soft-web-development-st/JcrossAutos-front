@@ -12,7 +12,9 @@ import { RiAdminFill } from "react-icons/ri";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
-import {Navbar,Container,Nav,Form,FormControl,Button} from 'react-bootstrap'
+import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import Search from '../../components/forms/Search'
+import MediaQuery from "react-responsive";
 
 // dropdown
 // import Dropdown from "../UI/Dropdown";
@@ -29,7 +31,7 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 // search form
-import Search from "../forms/Search";
+// import Search from "../forms/Search";
 
 import logo1 from "../../images/logo.jpeg";
 
@@ -51,69 +53,23 @@ const Header = () => {
     history.push("/login");
   };
 
-  return ( 
+  return (
     <>
-      {/* nav 1 */}
-      {/* <div className="border">
-        <div className="container">
-          <div className="nav-1 ">
-            <div className="nav-1-left ">
-              <div className="nav-1-left-opening flex">
-                <i className="far fa-clock"></i>
-                <p>10:00 AM to 5:00 PM </p>
-              </div>
-              <div className="nav-1-left-email flex">
-                <i className="far fa-envelope"></i>
-                <p>support@jpcross.com</p>
-              </div>
-            </div>
-            <div className="nav-1-right ">
-              <div className="nav-1-right-item nav-1-right-phone flex">
-                <i className="fas fa-phone"></i>
-                <p>(007) 123 1223</p>
-              </div>
-              <div className="nav-1-right-item nav-1-right-social flex">
-                <a href="#">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-google-plus-g"></i>
-                </a>
-                <a href="#">
-                  <i className="fab fa-youtube"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* end of nav one */}
-
       {/* bothStrap... */}
-      <Navbar className="navBar" expand="lg" variant="dark" >
+      <Navbar collapseOnSelect className="navBar" expand="lg" variant="dark">
         <Container>
           <Navbar.Brand className="logo_nav" href="#home">
-           
-              <Navbar.Brand href="/">
-                <img
-                  alt=""
-                  src={logo1}
-                  width="50"
-                  height="50"
-                   className="d-inline-block align-top img_logo"
-                />{" "}
-                
-                <span className="j">J</span>{" "}
-                <span className="cross">CROSS</span>{" "}
-                <span className="motors">autos</span>
-              </Navbar.Brand>
-            
+            <Navbar.Brand href="/">
+              <img
+                alt=""
+                src={logo1}
+                width="50"
+                height="50"
+                className="d-inline-block align-top img_logo"
+              />{" "}
+              <span className="j">J</span> <span className="cross">CROSS</span>{" "}
+              <span className="motors">autos</span>
+            </Navbar.Brand>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -190,7 +146,7 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link  href="#deets">
+              <Nav.Link href="#deets">
                 <li>
                   {!user && (
                     <NavLink
@@ -210,7 +166,7 @@ const Header = () => {
                       // className="logout"
                       to="/login"
                       onClick={logout}
-                      className= "header_link"
+                      className="header_link"
                     >
                       {" "}
                       <AiOutlineLogout className="icon" /> Logout
@@ -231,7 +187,12 @@ const Header = () => {
                   )}
                 </li>
               </Nav.Link>
-            </Nav>
+            </Nav>{" "}
+
+            <MediaQuery maxWidth={1000}>
+              <Search/>
+            </MediaQuery>
+         
           </Navbar.Collapse>
         </Container>
       </Navbar>

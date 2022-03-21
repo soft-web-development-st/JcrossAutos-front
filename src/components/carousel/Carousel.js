@@ -1,8 +1,8 @@
 import React from "react";
-import Search from '../forms/Search'
 import { Carousel } from "react-bootstrap";
 import car5 from '../../images/car5.raw'
 import car9 from "../../images/carousel8.raw";
+import SearchHome from "../forms/SearchHome";
 
 
 const Carousels = () => {
@@ -24,7 +24,7 @@ const Carousels = () => {
                 <h3>Then, build your deal to fit your needs.</h3>
               </div>
               <div className="main-search-form flex">
-                <Search />
+                <SearchHome />
               </div>
             </div>
           </Carousel.Caption>
@@ -43,7 +43,7 @@ const Carousels = () => {
                 <h3>Authentic Cars. Best Quality .</h3>
               </div>
               <div className="main-search-form flex">
-                <Search />
+                <SearchHome />
               </div>
             </div>
           </Carousel.Caption>

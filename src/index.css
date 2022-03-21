@@ -707,13 +707,14 @@ padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  
+  width: 100%;
 }
 
 .testimonial-card-item {
   position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   transition: all .5s ease;
+  width: 100%;
 }
 .testimonial-card-item:hover{
   transform: scale(0.95);
