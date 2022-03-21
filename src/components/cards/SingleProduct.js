@@ -103,7 +103,6 @@ const SingleProduct = ({ product, onStarClick, star }) => {
               Email us at <b>jcrossmd14@gamil.com</b> for inquiry
             </TabPane>
           </Tabs>
-          <ContactSeller/>
         </div>
 
         <div className="sp_prouct_in">
@@ -150,6 +149,7 @@ const SingleProduct = ({ product, onStarClick, star }) => {
             <ProductListItem product={product} />
           </Card>
         </div>
+        <ContactSeller />
       </div>
     </>
   );
