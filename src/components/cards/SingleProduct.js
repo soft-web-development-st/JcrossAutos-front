@@ -20,6 +20,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { addToWishList } from "../../helpers/user";
 import { toast } from "react-toastify";
 import { useHistory } from "react-router-dom";
+import ContactSeller from "../forms/ContactSeller";
 
 
 const { Meta } = Card;
@@ -102,6 +103,7 @@ const SingleProduct = ({ product, onStarClick, star }) => {
               Email us at <b>jcrossmd14@gamil.com</b> for inquiry
             </TabPane>
           </Tabs>
+          <ContactSeller/>
         </div>
 
         <div className="sp_prouct_in">

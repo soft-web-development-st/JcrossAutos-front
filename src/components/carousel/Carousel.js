@@ -21,7 +21,7 @@ const Carousels = () => {
             <div className="main-search">
               <div className="main-search-contents">
                 <h1>Find the Car You Want, Your Way!!</h1>
-                <h3>Then, build your deal to fit your needs.</h3>
+                <h3> Build your deal to fit your needs.</h3>
               </div>
               <div className="main-search-form flex">
                 <SearchHome />

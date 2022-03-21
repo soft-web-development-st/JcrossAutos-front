@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="overlay"></div>
-      {/* <img src={main} alt="main" className="main" /> */}
+
       <Carousels />
 
       <div className="home_jumbotron ">
