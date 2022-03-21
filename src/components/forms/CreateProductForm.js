@@ -44,7 +44,7 @@ const CreateProductForm = ({
         </div>
         <div className="pp_group">
           <label> Description</label>
-          <textarea
+          <input
             type="text"
             name="description"
             className="pp_input"
