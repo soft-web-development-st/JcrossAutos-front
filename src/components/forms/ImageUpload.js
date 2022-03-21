@@ -25,7 +25,7 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
           800,
           800,
           "JPEG",
-          50,
+          40,
           0,
           (uri) => {
             axios
