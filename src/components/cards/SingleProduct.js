@@ -149,8 +149,8 @@ const SingleProduct = ({ product, onStarClick, star }) => {
             <ProductListItem product={product} />
           </Card>
         </div>
-        <ContactSeller />
       </div>
+        <ContactSeller />
     </>
   );
 };
