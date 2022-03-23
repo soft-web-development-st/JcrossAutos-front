@@ -17,15 +17,17 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
     let files = e.target.files;
     let allUploadFiles = values.images;
 
+    console.log('All uloaded files',allUploadFiles);
+
     if (files) {
       setLoading(true);
       for (let i = 0; i < files.length; i++) {
         Resizer.imageFileResizer(
           files[i],
-          800,
-          800,
+          300,
+          300,
           "JPEG",
-          40,
+          100,
           0,
           (uri) => {
             axios
@@ -49,6 +51,7 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
                 setLoading(false);
                 console.log("ERROR FROM IMAGE UPLOAD", err);
               });
+            console.log(uri);
           },
           "base64"
         );
