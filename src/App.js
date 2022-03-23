@@ -207,7 +207,7 @@ function App() {
           <AdminRoute exact path="/admin/coupon" component={CreateCouponPage} />
           <UserRoute exact path="/payment" component={Payment} />
         </Switch>
-      </Suspen>
+      </Suspense>
   
   );
 }
