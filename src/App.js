@@ -1,5 +1,5 @@
 // react import
-import React, {    Fragment, lazy, Suspense, useEffect } from "react";
+import React, {    Fragment, lazy, useEffect } from "react";
 import { Route, Switch } from 'react-router-dom'
 
 // import auth
@@ -154,12 +154,12 @@ function App() {
   },[])
 
   return (
-    <Suspense
+    <Fragment
     
         fallback={
-          <div className="col alert alert-light text-center">
+          <div className="col alert alert-lght text-center">
             __ JCROSS AUTO
-            <LoadingOutlined className="text-success" />
+            <LoadingOutlined />
             ___
           </div>
         }
@@ -207,7 +207,7 @@ function App() {
           <AdminRoute exact path="/admin/coupon" component={CreateCouponPage} />
           <UserRoute exact path="/payment" component={Payment} />
         </Switch>
-      </Suspense>
+      </Fragment>
   
   );
 }
