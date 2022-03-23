@@ -35,7 +35,7 @@ const Register = ({history}) => {
     e.preventDefault();
 
     const config = {
-      url: "http://159.223.152.111/register/complete",
+      url: "http://jcross-jp-auto.com/register/complete",
       handleCodeInApp: true,
     };
 
