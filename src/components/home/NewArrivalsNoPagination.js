@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { getProducts } from "../../helpers/product";
 import ProductCard from "../cards/ProductCard";
 import LoadingCard from "../cards/LoadingCard";
-import { Carousel } from "react-bootstrap";
 
 
 const NewArrivalsNOPagination = () => {
@@ -32,13 +31,11 @@ const NewArrivalsNOPagination = () => {
                 <LoadingCard count={3} />
               </div>
             ) : (
-                <Carousel>
-                  <Carousel.Item>
+              <div>
                 {products.map((product) => (
                   <ProductCard product={product} key={product._id} />
-                  ))}
-                  </Carousel.Item>
-              </Carousel>
+                ))}
+              </div>
             )}
           </div>
         </div>

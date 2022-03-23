@@ -19,7 +19,7 @@ const CategoryList = () => {
     <div>
       <div className="cl_row">
         {loading ? (
-          <LoadingOutlined className="cl_loading" />
+          <LoadingOutlined className="text-danger text-center m-5 pt-5" />
         ) : (
           categories.map((c) => (
             <Link key={c._id} className="cl_link" to={`/category/${c.slug}`}>

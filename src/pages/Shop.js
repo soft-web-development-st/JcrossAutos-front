@@ -428,14 +428,14 @@ const Shop = () => {
           </div>
           <div className="col-md-9 pt-2">
             {loading ? (
-              <h4>Loading..</h4>
+              <h4 className="text-center text-danger">Loading..</h4>
             ) : (
               <h4 className="text-center alert alert-danger">Products</h4>
             )}
             {products.length < 1 && (
               <p className="text-center alert alert-success pt-5">
                 <h1 className="text-success">No Products Found </h1> <br />{" "}
-                Filter to see more Products!
+                <h4 className="text-success">Please Refresh to see more Products!!</h4>
               </p>
             )}
             <div className="row ">
