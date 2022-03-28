@@ -17,15 +17,14 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
     let files = e.target.files;
     let allUploadFiles = values.images;
 
-    console.log('All uloaded files',allUploadFiles);
 
     if (files) {
       setLoading(true);
       for (let i = 0; i < files.length; i++) {
         Resizer.imageFileResizer(
           files[i],
-          300,
-          300,
+          700,
+          700,
           "JPEG",
           50,
           0,
@@ -45,13 +44,13 @@ const ImageUpload = ({ values, setValues, setLoading, loading }) => {
                 setLoading(false);
                 allUploadFiles.push(res.data);
 
-                setValues({ ...values, images: allUploadFiles });
               })
               .catch((err) => {
-                setLoading(false);
-                console.log("ERROR FROM IMAGE UPLOAD", err);
-              });
-            console.log(uri);
+                  setLoading(false);
+                  console.log("ERROR FROM IMAGE UPLOAD", err);
+                });
+                  setValues({ ...values, images: allUploadFiles });
+           
           },
           "base64"
         );

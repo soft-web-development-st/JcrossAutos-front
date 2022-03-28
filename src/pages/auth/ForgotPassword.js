@@ -28,7 +28,7 @@ const ForgotPassword = ({ history }) => {
         setLoading(true)
 
         const config = {
-          url: "https://159.223.220.218/login",
+          url: "https://jcross-jp-auto.com/login",
           handleCodeInApp: true,
         };
         
